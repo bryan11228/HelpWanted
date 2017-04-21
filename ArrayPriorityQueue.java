@@ -1,19 +1,16 @@
-// Bryan Chan
-// APCS2 pd5
-// HW32 -- Getting Past the Velvet Rope
-// 2017-04-20
+
 import java.util.ArrayList;
 
 public class ArrayPriorityQueue implements PriorityQueue
 {
-    private ArrayList<Integer> _data;
+    private ArrayList<Ticket> _data;
     
     public ArrayPriorityQueue(){
-	_data = new ArrayList<Integer>();
+	_data = new ArrayList<Ticket>();
     }
     
     //Adds an item to the priority queue
-    public void add(int x){
+    public void add(Ticket x){
 	_data.add(x);
     }
 
@@ -23,10 +20,10 @@ public class ArrayPriorityQueue implements PriorityQueue
     }
 
     //returns the smallest item stored in the priority queue
-    public int peekMin(){
+    public Ticket peekMin(){
     	int minPos = 0;
 	for(int i = 1; i < _data.size(); i++){
-	    if(_data.get(i) < _data.get(minPos)){
+	    if(_data.get(i).compareTo(_data.get(minPos)) < 0 ){
 		minPos = i;
 	    }
 	}
@@ -34,10 +31,10 @@ public class ArrayPriorityQueue implements PriorityQueue
     }
 
     //returns and removes the smallest item stored in the priority queue
-    public int removeMin(){
+    public Ticket removeMin(){
 	int minPos = 0;
 	for(int i = 1; i < _data.size(); i++){
-	    if(_data.get(i) < _data.get(minPos)){
+	    if(_data.get(i).compareTo(_data.get(minPos)) < 0 ){
 		minPos = i;
 	    }
 	}

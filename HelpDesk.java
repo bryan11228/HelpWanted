@@ -1,5 +1,10 @@
 public class HelpDesk {
-    private PriorityQueue<Ticket> problems;
+
+    private ArrayPriorityQueue<Ticket> problems;
+
+    public HelpDesk(){
+	problems = new ArrayPriorityQueue();
+    }
 
 
 
