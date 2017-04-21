@@ -13,7 +13,7 @@ public class Ticket implements Comparable {
 
     // v-------------v constructor v-------------v
 
-    public Ticket() {
+    public Ticket() {//default
 	ID = 0;
 	VIPLvl = 100;
 	solved = false;
@@ -22,7 +22,7 @@ public class Ticket implements Comparable {
 	sol_Description = "";
     }
 
-    public Ticket( int VIP, String nom, String prob) {
+    public Ticket( int VIP, String nom, String prob) {//overloaded
 	ID = 0;
 	VIPLvl = VIP;
 	solved = false;
@@ -82,9 +82,10 @@ public class Ticket implements Comparable {
 	return ret;
     }
 
-    public String setSolDesc() {
+    public String setSolDesc(String newVal) {
         String ret = sol_Description;
-	
+	sol_Description = newVal;
+	return ret;
     }
 
     // ^-------------^ mutators ^-------------^
