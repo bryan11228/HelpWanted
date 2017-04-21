@@ -13,7 +13,7 @@ public class Ticket implements Comparable {
 
     // v-------------v constructor v-------------v
 
-    public Ticket() {
+    public Ticket() {//default
 	ID = 0;
 	VIPLvl = 100;
 	solved = false;
@@ -22,7 +22,7 @@ public class Ticket implements Comparable {
 	sol_Description = "";
     }
 
-    public Ticket( int VIP, String nom, String prob) {
+    public Ticket( int VIP, String nom, String prob) {//overloaded
 	ID = 0;
 	VIPLvl = VIP;
 	solved = false;
@@ -55,6 +55,40 @@ public class Ticket implements Comparable {
     }
 
     // ^-------------^ accessors ^-------------^
+  
+   // v-------------v mutators v-------------v
+
+    public int setID(int newVal) {
+        int ret = ID;
+	ID = newVal;
+	return ret;
+    }
+	   
+    public int setVIP(int newVal) {
+	int ret = VIPLvl;
+	VIPLvl = newVal;
+	return ret;
+    }
+
+    public boolean toggleSol() {
+	boolean ret = solved;
+	solved = !(solved);
+	return ret;
+    }
+
+    public String setName(String newVal) {
+	String ret = name;
+	name = newVal;
+	return ret;
+    }
+
+    public String setSolDesc(String newVal) {
+        String ret = sol_Description;
+	sol_Description = newVal;
+	return ret;
+    }
+
+    // ^-------------^ mutators ^-------------^
 
     // v-------------v compareTo v-------------v
 
