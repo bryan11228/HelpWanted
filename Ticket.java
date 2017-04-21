@@ -1,11 +1,37 @@
 public class Ticket implements Comparable {
 
+    // v-------------v instanceVars v-------------v
+
     private int ID;
     private int VIPLvl;
     private boolean solved;
     private String name;
     private String problem;
     private String sol_Description;
+
+    // ^-------------^ instanceVars ^-------------^
+
+    // v-------------v constructor v-------------v
+
+    public Ticket() {
+	ID = 0;
+	VIPLvl = 100;
+	solved = false;
+	name = "";
+	problem = "";
+	sol_Description = "";
+    }
+
+    public Ticket( int VIP, String nom, String prob) {
+	ID = 0;
+	VIPLvl = VIP;
+	solved = false;
+	name = nom;
+	problem = prob;
+	sol_Description = "";
+    }
+
+    // ^-------------^ constructor ^-------------^
 
     // v-------------v accessors v-------------v
 
