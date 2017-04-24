@@ -1,4 +1,4 @@
-public class Ticket implements Comparable {
+public abstract class Ticket implements Comparable {
 
     // v-------------v instanceVars v-------------v
 
