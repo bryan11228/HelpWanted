@@ -23,7 +23,7 @@ public class Ticket implements Comparable {
     }
 
     public Ticket( int VIP, String nom, String prob) {//overloaded
-	ID = 0;
+	ID = (int) (Math.random() * 9999);
 	VIPLvl = VIP;
 	solved = false;
 	name = nom;
