@@ -1,15 +1,15 @@
-public interface PriorityQueue<Ticket> {
+public interface PriorityQueue<T> {
 
     //add a Ticket into the ArrayPriorityQueue
-    public void add(Ticket x);
+    public void add(T x);
 
     //check if the ArrayPQ is empty
     public boolean isEmpty();
 
     //check the next Ticket to be processed based on priority
-    public Ticket peekMin();
+    public T peekMin();
 
     //remove the next Ticket after it has been processed
-    public Ticket removeMin(); 
+    public T removeMin(); 
 
 }
