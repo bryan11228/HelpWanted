@@ -43,19 +43,6 @@ public class ArrayPriorityQueue implements PriorityQueue
 
     public static void main( String[] args){
 
-	ArrayPriorityQueue a = new ArrayPriorityQueue();
-	System.out.println("Now enqueueing... " + "\n_data after enqueueing:");
-	a.add(23);
-	a.add(42);
-	a.add(66);
-	a.add(12);
-	System.out.println(a._data);
-	System.out.println("Now dequeueing..." + "\nThe smallest element in _data is: ");
-	System.out.println(a.removeMin());
-	System.out.println("_data after dequeueing: ");
-	System.out.print(a._data);
-	System.out.println(" The new smallest element in _data is: " + a.peekMin());
-
 	
     }
     
