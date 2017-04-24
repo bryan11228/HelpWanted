@@ -9,6 +9,7 @@ Edwin Mok, Mark Shafran, Bryan Chan
 Class Ticket implements comparable in order to compare the VIPStatus of the user who submitted a ticket.  We also typed our ArrayPriorityQueue in that it accepts Tickets in its underlying ArrayList structure.
 
 *Instance Variables:*
+
 int ID- The identification of a ticket
 
 int VIPLvl- The status of the user who submitted the ticket (ie. CEO)
