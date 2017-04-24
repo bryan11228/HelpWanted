@@ -92,11 +92,11 @@ public class Ticket implements Comparable {
 
     // v-------------v compareTo v-------------v
 
-    public int compareTo(Ticket other) {
-	if (this.getVIP() < other.getVIP()) {
+    public int compareTo(Object other) {
+	if (this.getVIP() < (Ticket other).getVIP()) {
 	    return 1;
 	}
-	else if (this.getVIP() > other.getVIP()) {
+	else if (this.getVIP() > (Ticket.other).getVIP()) {
 	    return -1;
 	}
 	else {
