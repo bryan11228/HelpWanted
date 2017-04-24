@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 
-public class ArrayPriorityQueue implements PriorityQueue
+public class ArrayPriorityQueue<T> implements PriorityQueue<T>
 {
     private ArrayList<Ticket> _data;
     
@@ -23,7 +23,7 @@ public class ArrayPriorityQueue implements PriorityQueue
     public Ticket peekMin(){
     	int minPos = 0;
 	for(int i = 1; i < _data.size(); i++){
-	    if(_data.get(i).compareTo(_data.get(minPos)) < 0 ){
+	    if(_data.get(i).compareTo((_data.get(minPos))) < 0 ){
 		minPos = i;
 	    }
 	}
