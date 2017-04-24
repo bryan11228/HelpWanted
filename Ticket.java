@@ -14,7 +14,7 @@ public class Ticket implements Comparable {
     // v-------------v constructor v-------------v
 
     public Ticket() {//default
-	ID = 0;
+	ID = (int) (Math.random() * 9999);
 	VIPLvl = 100;
 	solved = false;
 	name = "";
