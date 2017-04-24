@@ -20,3 +20,6 @@ String name- The name of the user who submitted the ticket
 String problem- A description of the user's problem
 
 String sol_Desciption- A description of the solution to the user's problem
+
+**Class HelpDesk**
+
